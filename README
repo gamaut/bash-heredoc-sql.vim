@@ -1,0 +1,22 @@
+bash-heredoc-sql.vim
+====================
+
+Applies SQL syntax highlighting in shell scripts if the SQL
+code is within a heredoc:
+
+Example
+-------
+
+    mysql -usomeUser -p <<SQL
+        use mydb;
+        truncate mytable;
+        insert into mytable values (1, 2, 3);
+        show warnings;
+    SQL
+
+Installation
+------------
+
+Add to .vimrc
+
+    Plug 'gamaut/bash-heredoc-sql.vim'
